@@ -16,12 +16,12 @@ namespace mgt.Desktop
         public Manager manager;
         World world;
 
+        //shaders
+        Effect effect;
+        Effect greyscale;
+
         private Texture2D test;
-        private Texture2D shuttlesprite;
         private SpriteFont font;
-        private Shuttle shuttle;
-        private Texture2D lasersprite;
-        private Laser laser;
 
         public Game1()
         {
@@ -46,11 +46,11 @@ namespace mgt.Desktop
 
 
             //resize window
-            graphics.PreferredBackBufferWidth = 1920;
-            graphics.PreferredBackBufferHeight = 1200;
+            graphics.PreferredBackBufferWidth = 1280;
+            graphics.PreferredBackBufferHeight = 720;
             graphics.ApplyChanges();
 
-            IsFixedTimeStep = true;
+            //IsFixedTimeStep = true;
 
             base.Initialize();
         }
@@ -64,12 +64,16 @@ namespace mgt.Desktop
 
             test = Content.Load<Texture2D>("download");
 
+            //load shaders
+            effect = Content.Load<Effect>("shader");
+            greyscale = Content.Load<Effect>("greyscale");
+
             manager.newObj(new Shuttle());
 
 
 
 
-            font = Content.Load<SpriteFont>("font");
+            font = Content.Load<SpriteFont>("font2");
 
             // TODO: use this.Content to load your game content here
         }
@@ -97,12 +101,17 @@ namespace mgt.Desktop
 
             manager.update(); //update manager-tracked objects
 
+            //create a texture2d from an Obj's path variable. highly useful because 
+            //it means i don't need to write lines of code to load every sprite
             for (int i = 0; i < manager.world.contents.Length; i++)
-            { //create a texture2d from an Obj's path. would put this in Manager but it can't access the content manager
+            { 
                 if (manager.world.contents[i] != null)
-                {
+                { //would put this in Manager but it can't access the content manager
                     if (manager.world.contents[i].sprite == null) //ez performance optimization
+                    {
                         manager.world.contents[i].sprite = Content.Load<Texture2D>(manager.world.contents[i].path);
+                        Console.WriteLine("resolved sprite");
+                    }
                 }
             }
 
@@ -120,7 +129,9 @@ namespace mgt.Desktop
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
-            spriteBatch.Begin();
+            spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend);
+            //effect.Parameters["texMask"].SetValue(Content.Load<Texture2D>("rainbow"));
+            //effect.CurrentTechnique.Passes[0].Apply(); //apply shader
 
             spriteBatch.Draw(test, new Rectangle(0, 0, 1920, 1200), Color.White);
             manager.draw(); //draw objects tracked by the manager

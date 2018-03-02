@@ -4,10 +4,14 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
-    <File>/home/taco/Projects/mgt/mgt/Content/custom.png</File>
-    <File>/home/taco/Projects/mgt/mgt/Content/shuttle.png</File>
-    <File>/home/taco/Projects/mgt/mgt/Content/font.spritefont</File>
-    <File>/home/taco/Projects/mgt/mgt/Content/download.jpeg</File>
-    <File>/home/taco/Projects/mgt/mgt/Content/laser.png</File>
+    <File>D:/Git/mgt/mgt/Content/custom.png</File>
+    <File>D:/Git/mgt/mgt/Content/shuttle.png</File>
+    <File>D:/Git/mgt/mgt/Content/download.jpeg</File>
+    <File>D:/Git/mgt/mgt/Content/laser.png</File>
+    <File>D:/Git/mgt/mgt/Content/font2.spritefont</File>
+    <File>D:/Git/mgt/mgt/Content/shader.fx</File>
+    <File>D:/Git/mgt/mgt/Content/greyscale.fx</File>
+    <File>D:/Git/mgt/mgt/Content/negative.fx</File>
+    <File>D:/Git/mgt/mgt/Content/rainbow.png</File>
   </SourceFiles>
 </SourceFileCollection>

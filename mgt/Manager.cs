@@ -1,6 +1,8 @@
-﻿using System;
-using Microsoft.Xna.Framework.Graphics;
-
+﻿using Microsoft.Xna.Framework.Graphics;
+//This class handles the creation, updating, drawing, and deletion of game objects
+//it tracks game objects in a list so that all game objects can be easily updated by calling
+//manager.update()
+//it does the same with manager.draw()
 namespace mgt.Desktop
 {
     public class Manager
@@ -49,15 +51,22 @@ namespace mgt.Desktop
                 {
                     this.world.contents[i] = obj;
                     this.world.contents[i].manager = this;
+                    this.world.contents[i].worldIndex = i;
                     return i;
                 }
             }
             return 0;
         }
+
+        public void delObj(Obj obj)
+        {
+            this.world.contents[obj.worldIndex] = null;
+            obj = null;
+        }
     }
 
     public class World
     {
-        public Obj[] contents = new Obj[100];
+        public Obj[] contents = new Obj[9999];
     }
 }
