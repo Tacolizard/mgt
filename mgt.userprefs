@@ -1,0 +1,18 @@
+﻿<Properties StartupConfiguration="{905B6B3B-33B1-49FB-B691-AE30F88CB4F5}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="mgt/Laser.cs">
+    <Files>
+      <File FileName="mgt/Game1.cs" Line="97" Column="13" />
+      <File FileName="mgt/Manager.cs" Line="48" Column="52" />
+      <File FileName="mgt/Laser.cs" Line="11" Column="19" />
+      <File FileName="mgt/Shuttle.cs" Line="24" Column="27" />
+      <File FileName="mgt/Obj.cs" Line="71" Column="37" />
+      <File FileName="mgt/SmoothFramerate.cs" Line="6" Column="30" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
