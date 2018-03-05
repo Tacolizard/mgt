@@ -51,3 +51,5 @@ D:/Git/mgt/mgt/obj/Release/mgt.Desktop.application
 /home/taco/Projects/mgt/mgt/bin/DesktopGL/Any CPU/Release/MonoGame.Framework.xml
 /home/taco/Projects/mgt/mgt/obj/Release/mgt.Desktop.csproj.CoreCompileInputs.cache
 /home/taco/Projects/mgt/mgt/obj/Release/mgt.Desktop.exe
+/home/taco/Projects/mgt/mgt/obj/Release/mgt.Desktop.csprojResolveAssemblyReference.cache
+/home/taco/Projects/mgt/mgt/bin/DesktopGL/Any CPU/Release/Content/invader.xnb

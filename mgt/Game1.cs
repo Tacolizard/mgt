@@ -36,6 +36,11 @@ namespace mgt.Desktop
             Content.RootDirectory = "Content";
         }
 
+        public void Quit()
+        {
+            Exit();
+        }
+
         /// <summary>
         /// Allows the game to perform any initialization it needs to before starting to run.
         /// This is where it can query for any required services and load any non-graphic
@@ -48,7 +53,7 @@ namespace mgt.Desktop
 
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
-            manager = new Manager(spriteBatch);
+            manager = new Manager(this, spriteBatch);
             world = manager.newWorld();
 
             ScreenWidth = GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Width;
@@ -83,6 +88,7 @@ namespace mgt.Desktop
             greyscale = Content.Load<Effect>("greyscale");
 
             manager.newObj(new Shuttle());
+            manager.newObj(new Invader());
 
 
 
@@ -124,7 +130,7 @@ namespace mgt.Desktop
                     if (manager.world.contents[i].sprite == null) //ez performance optimization
                     {
                         manager.world.contents[i].sprite = Content.Load<Texture2D>(manager.world.contents[i].path);
-                        Console.WriteLine("resolved sprite");
+                        Console.WriteLine("resolved sprite from path '"+manager.world.contents[i].path+"'");
                     }
                 }
             }

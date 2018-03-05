@@ -1,4 +1,5 @@
-﻿using Microsoft.Xna.Framework.Graphics;
+﻿using System;
+using Microsoft.Xna.Framework.Graphics;
 //This class handles the creation, updating, drawing, and deletion of game objects
 //it tracks game objects in a list so that all game objects can be easily updated by calling
 //manager.update()
@@ -9,9 +10,11 @@ namespace mgt.Desktop
     {
         public World world;
         public SpriteBatch spriteBatch;
+        public Game1 game;
 
-        public Manager(SpriteBatch spriteBatch)
+        public Manager(Game1 game, SpriteBatch spriteBatch)
         {
+            this.game = game;
             this.spriteBatch = spriteBatch;
         }
 
@@ -55,6 +58,7 @@ namespace mgt.Desktop
                     return i;
                 }
             }
+            Console.WriteLine("Out of space for Objs.");
             return 0;
         }
 

@@ -1,5 +1,4 @@
 ﻿using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Graphics;
 
 namespace mgt.Desktop
 {
@@ -16,7 +15,7 @@ namespace mgt.Desktop
             sharedConstructor();
         }
 
-        public Laser(int x, int y)
+        public Laser(double x, double y)
             :base()
         {
             sharedConstructor();
@@ -42,10 +41,5 @@ namespace mgt.Desktop
                 this.manager.delObj(this);
             }
         }
-
-        /*public override void draw(SpriteBatch spriteBatch)
-        {
-            spriteBatch.Draw(sprite, new Vector2(x, y), new Rectangle(0, 0, sx, sy), Color.White, angle, origin, 0.1f, SpriteEffects.None, 1);
-        }*/
     }
 }

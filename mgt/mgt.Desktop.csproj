@@ -83,6 +83,7 @@
     <Compile Include="SmoothFramerate.cs" />
     <Compile Include="Laser.cs" />
     <Compile Include="Manager.cs" />
+    <Compile Include="Invader.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="MonoGame.Framework">

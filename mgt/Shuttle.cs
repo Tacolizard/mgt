@@ -1,6 +1,5 @@
 ﻿using System;
 using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 
 namespace mgt.Desktop
@@ -17,9 +16,9 @@ namespace mgt.Desktop
         {
             this.path = "shuttle";
             this.hasPhysics = true;
-            this.x = 200;
-            this.y = 200;
-            this.mass = 0.1f;
+            this.x = 200f;
+            this.y = 200f;
+            this.mass = 0.01f;
         }
 
         public override void update()
@@ -32,24 +31,20 @@ namespace mgt.Desktop
 
             if (state.IsKeyDown(Keys.Up))
             {
-                //this.y -= Math.Abs(speed);
-                applyForce(0, -speed);
+                applyForce(new Vector2(0, -speed));
             }
             if (state.IsKeyDown(Keys.Down))
             {
-                //this.y += Math.Abs(speed);
-                applyForce(0, speed);
+                applyForce(new Vector2(0, speed));
             }
 
             if (state.IsKeyDown(Keys.Left))
             {
-                //this.x -= Math.Abs(speed);
-                applyForce(-speed, 0);
+                applyForce(new Vector2(-speed, 0));
             }
             if (state.IsKeyDown(Keys.Right))
             {
-                //this.x += Math.Abs(speed);
-                applyForce(speed, 0);
+                applyForce(new Vector2(speed, 0));
             }
 
             if (state.IsKeyDown(Keys.Space))
@@ -59,25 +54,10 @@ namespace mgt.Desktop
                 {
                     float angle = rnd.Next(-5, 5);
                     Laser laser = (Laser) this.manager.world.contents[this.manager.newObj(new Laser(this.x + 60, this.y-50))];
-                    //float angle = (float)Math.Atan2(0, 600);
-                    //this.manager.world.contents[this.manager.newObj(new Laser(this.x+90, this.y))].applyForce(angle, -30);
                     laser.angle = angle;
-                    laser.applyForce(angle, -30);
-                    
-                    //now that's a dank one-liner
-                    //newObj returns an index of the obj in the world's contents array, so we use that to access the object
-                    //so that we can apply force, with some random spread
+                    laser.applyForce(new Vector2(angle, -30));
                 }
             }
-
-            //Console.WriteLine(this.momentumX+" "+this.momentumY);
-
         }
-
-        public override void draw(SpriteBatch spriteBatch)
-        {
-            spriteBatch.Draw(this.sprite, new Vector2(this.x, this.y), Color.White);
-        }
-
     }
 }

@@ -1,32 +1,63 @@
-D:\Git\mgt\mgt\bin\DesktopGL\Any CPU\Debug\x86\SDL2.dll
-D:\Git\mgt\mgt\bin\DesktopGL\Any CPU\Debug\x64\SDL2.dll
-D:\Git\mgt\mgt\bin\DesktopGL\Any CPU\Debug\x86\soft_oal.dll
-D:\Git\mgt\mgt\bin\DesktopGL\Any CPU\Debug\x64\soft_oal.dll
-D:\Git\mgt\mgt\bin\DesktopGL\Any CPU\Debug\x86\libSDL2-2.0.so.0
-D:\Git\mgt\mgt\bin\DesktopGL\Any CPU\Debug\x64\libSDL2-2.0.so.0
-D:\Git\mgt\mgt\bin\DesktopGL\Any CPU\Debug\x86\libopenal.so.1
-D:\Git\mgt\mgt\bin\DesktopGL\Any CPU\Debug\x64\libopenal.so.1
-D:\Git\mgt\mgt\bin\DesktopGL\Any CPU\Debug\libSDL2-2.0.0.dylib
-D:\Git\mgt\mgt\bin\DesktopGL\Any CPU\Debug\libopenal.1.dylib
-D:\Git\mgt\mgt\bin\DesktopGL\Any CPU\Debug\MonoGame.Framework.dll.config
-D:\Git\mgt\mgt\bin\DesktopGL\Any CPU\Debug\Content\custom.xnb
-D:\Git\mgt\mgt\bin\DesktopGL\Any CPU\Debug\Content\download.xnb
-D:\Git\mgt\mgt\bin\DesktopGL\Any CPU\Debug\Content\font.xnb
-D:\Git\mgt\mgt\bin\DesktopGL\Any CPU\Debug\Content\font2.xnb
-D:\Git\mgt\mgt\bin\DesktopGL\Any CPU\Debug\Content\laser.xnb
-D:\Git\mgt\mgt\bin\DesktopGL\Any CPU\Debug\Content\shuttle.xnb
-D:\Git\mgt\mgt\bin\DesktopGL\Any CPU\Debug\mgt.Desktop.exe
-D:\Git\mgt\mgt\bin\DesktopGL\Any CPU\Debug\mgt.Desktop.pdb
-D:\Git\mgt\mgt\bin\DesktopGL\Any CPU\Debug\MonoGame.Framework.dll
-D:\Git\mgt\mgt\obj\Debug\mgt.Desktop.csproj.CoreCompileInputs.cache
-D:\Git\mgt\mgt\obj\Debug\mgt.Desktop.exe
-D:\Git\mgt\mgt\obj\Debug\mgt.Desktop.pdb
-D:\Git\mgt\mgt\bin\DesktopGL\Any CPU\Debug\mgt.Desktop.exe.manifest
-D:\Git\mgt\mgt\bin\DesktopGL\Any CPU\Debug\mgt.Desktop.application
-D:\Git\mgt\mgt\obj\Debug\mgt.Desktop.exe.manifest
-D:\Git\mgt\mgt\obj\Debug\mgt.Desktop.application
-D:\Git\mgt\mgt\obj\Debug\mgt.Desktop.csprojResolveAssemblyReference.cache
-D:\Git\mgt\mgt\bin\DesktopGL\Any CPU\Debug\Content\shader.xnb
-D:\Git\mgt\mgt\bin\DesktopGL\Any CPU\Debug\Content\greyscale.xnb
-D:\Git\mgt\mgt\bin\DesktopGL\Any CPU\Debug\Content\negative.xnb
-D:\Git\mgt\mgt\bin\DesktopGL\Any CPU\Debug\Content\rainbow.xnb
+D:/Git/mgt/mgt/bin/DesktopGL/Any CPU/Debug/x86/SDL2.dll
+D:/Git/mgt/mgt/bin/DesktopGL/Any CPU/Debug/x64/SDL2.dll
+D:/Git/mgt/mgt/bin/DesktopGL/Any CPU/Debug/x86/soft_oal.dll
+D:/Git/mgt/mgt/bin/DesktopGL/Any CPU/Debug/x64/soft_oal.dll
+D:/Git/mgt/mgt/bin/DesktopGL/Any CPU/Debug/x86/libSDL2-2.0.so.0
+D:/Git/mgt/mgt/bin/DesktopGL/Any CPU/Debug/x64/libSDL2-2.0.so.0
+D:/Git/mgt/mgt/bin/DesktopGL/Any CPU/Debug/x86/libopenal.so.1
+D:/Git/mgt/mgt/bin/DesktopGL/Any CPU/Debug/x64/libopenal.so.1
+D:/Git/mgt/mgt/bin/DesktopGL/Any CPU/Debug/libSDL2-2.0.0.dylib
+D:/Git/mgt/mgt/bin/DesktopGL/Any CPU/Debug/libopenal.1.dylib
+D:/Git/mgt/mgt/bin/DesktopGL/Any CPU/Debug/MonoGame.Framework.dll.config
+D:/Git/mgt/mgt/bin/DesktopGL/Any CPU/Debug/Content/custom.xnb
+D:/Git/mgt/mgt/bin/DesktopGL/Any CPU/Debug/Content/download.xnb
+D:/Git/mgt/mgt/bin/DesktopGL/Any CPU/Debug/Content/font.xnb
+D:/Git/mgt/mgt/bin/DesktopGL/Any CPU/Debug/Content/font2.xnb
+D:/Git/mgt/mgt/bin/DesktopGL/Any CPU/Debug/Content/laser.xnb
+D:/Git/mgt/mgt/bin/DesktopGL/Any CPU/Debug/Content/shuttle.xnb
+D:/Git/mgt/mgt/bin/DesktopGL/Any CPU/Debug/mgt.Desktop.exe
+D:/Git/mgt/mgt/bin/DesktopGL/Any CPU/Debug/mgt.Desktop.pdb
+D:/Git/mgt/mgt/bin/DesktopGL/Any CPU/Debug/MonoGame.Framework.dll
+D:/Git/mgt/mgt/obj/Debug/mgt.Desktop.csproj.CoreCompileInputs.cache
+D:/Git/mgt/mgt/obj/Debug/mgt.Desktop.exe
+D:/Git/mgt/mgt/obj/Debug/mgt.Desktop.pdb
+D:/Git/mgt/mgt/bin/DesktopGL/Any CPU/Debug/mgt.Desktop.exe.manifest
+D:/Git/mgt/mgt/bin/DesktopGL/Any CPU/Debug/mgt.Desktop.application
+D:/Git/mgt/mgt/obj/Debug/mgt.Desktop.exe.manifest
+D:/Git/mgt/mgt/obj/Debug/mgt.Desktop.application
+D:/Git/mgt/mgt/obj/Debug/mgt.Desktop.csprojResolveAssemblyReference.cache
+D:/Git/mgt/mgt/bin/DesktopGL/Any CPU/Debug/Content/shader.xnb
+D:/Git/mgt/mgt/bin/DesktopGL/Any CPU/Debug/Content/greyscale.xnb
+D:/Git/mgt/mgt/bin/DesktopGL/Any CPU/Debug/Content/negative.xnb
+D:/Git/mgt/mgt/bin/DesktopGL/Any CPU/Debug/Content/rainbow.xnb
+/home/taco/Projects/mgt/mgt/bin/DesktopGL/Any CPU/Debug/Content/font.xnb
+/home/taco/Projects/mgt/mgt/bin/DesktopGL/Any CPU/Debug/x86/SDL2.dll
+/home/taco/Projects/mgt/mgt/bin/DesktopGL/Any CPU/Debug/x64/SDL2.dll
+/home/taco/Projects/mgt/mgt/bin/DesktopGL/Any CPU/Debug/x86/soft_oal.dll
+/home/taco/Projects/mgt/mgt/bin/DesktopGL/Any CPU/Debug/x64/soft_oal.dll
+/home/taco/Projects/mgt/mgt/bin/DesktopGL/Any CPU/Debug/x86/libSDL2-2.0.so.0
+/home/taco/Projects/mgt/mgt/bin/DesktopGL/Any CPU/Debug/x64/libSDL2-2.0.so.0
+/home/taco/Projects/mgt/mgt/bin/DesktopGL/Any CPU/Debug/x86/libopenal.so.1
+/home/taco/Projects/mgt/mgt/bin/DesktopGL/Any CPU/Debug/x64/libopenal.so.1
+/home/taco/Projects/mgt/mgt/bin/DesktopGL/Any CPU/Debug/libSDL2-2.0.0.dylib
+/home/taco/Projects/mgt/mgt/bin/DesktopGL/Any CPU/Debug/libopenal.1.dylib
+/home/taco/Projects/mgt/mgt/bin/DesktopGL/Any CPU/Debug/MonoGame.Framework.dll.config
+/home/taco/Projects/mgt/mgt/bin/DesktopGL/Any CPU/Debug/Content/custom.xnb
+/home/taco/Projects/mgt/mgt/bin/DesktopGL/Any CPU/Debug/Content/download.xnb
+/home/taco/Projects/mgt/mgt/bin/DesktopGL/Any CPU/Debug/Content/font2.xnb
+/home/taco/Projects/mgt/mgt/bin/DesktopGL/Any CPU/Debug/Content/greyscale.xnb
+/home/taco/Projects/mgt/mgt/bin/DesktopGL/Any CPU/Debug/Content/laser.xnb
+/home/taco/Projects/mgt/mgt/bin/DesktopGL/Any CPU/Debug/Content/negative.xnb
+/home/taco/Projects/mgt/mgt/bin/DesktopGL/Any CPU/Debug/Content/rainbow.xnb
+/home/taco/Projects/mgt/mgt/bin/DesktopGL/Any CPU/Debug/Content/shader.xnb
+/home/taco/Projects/mgt/mgt/bin/DesktopGL/Any CPU/Debug/Content/shuttle.xnb
+/home/taco/Projects/mgt/mgt/bin/DesktopGL/Any CPU/Debug/mgt.Desktop.exe.manifest
+/home/taco/Projects/mgt/mgt/bin/DesktopGL/Any CPU/Debug/mgt.Desktop.application
+/home/taco/Projects/mgt/mgt/bin/DesktopGL/Any CPU/Debug/mgt.Desktop.exe
+/home/taco/Projects/mgt/mgt/bin/DesktopGL/Any CPU/Debug/mgt.Desktop.pdb
+/home/taco/Projects/mgt/mgt/bin/DesktopGL/Any CPU/Debug/MonoGame.Framework.dll
+/home/taco/Projects/mgt/mgt/bin/DesktopGL/Any CPU/Debug/MonoGame.Framework.xml
+/home/taco/Projects/mgt/mgt/obj/Debug/mgt.Desktop.csprojResolveAssemblyReference.cache
+/home/taco/Projects/mgt/mgt/obj/Debug/mgt.Desktop.csproj.CoreCompileInputs.cache
+/home/taco/Projects/mgt/mgt/obj/Debug/mgt.Desktop.exe
+/home/taco/Projects/mgt/mgt/obj/Debug/mgt.Desktop.pdb
