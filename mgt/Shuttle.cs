@@ -62,7 +62,7 @@ namespace mgt.Desktop
                     //float angle = (float)Math.Atan2(0, 600);
                     //this.manager.world.contents[this.manager.newObj(new Laser(this.x+90, this.y))].applyForce(angle, -30);
                     laser.angle = angle;
-                    laser.applyForce(angle, -3);
+                    laser.applyForce(angle, -30);
                     
                     //now that's a dank one-liner
                     //newObj returns an index of the obj in the world's contents array, so we use that to access the object

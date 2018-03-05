@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>D:/Git/mgt/mgt/Content/laser.png</SourceFile>
-  <SourceTime>2018-03-02T10:17:19.466912-08:00</SourceTime>
-  <DestFile>D:/Git/mgt/mgt/Content/bin/DesktopGL/laser.xnb</DestFile>
-  <DestTime>2018-03-02T13:24:47.1004423-08:00</DestTime>
+  <SourceFile>/home/taco/Projects/mgt/mgt/Content/laser.png</SourceFile>
+  <SourceTime>2018-02-28T22:27:53-08:00</SourceTime>
+  <DestFile>/home/taco/Projects/mgt/mgt/Content/bin/DesktopGL/laser.xnb</DestFile>
+  <DestTime>2018-03-05T11:12:11-08:00</DestTime>
   <Importer>TextureImporter</Importer>
-  <ImporterTime>2017-03-01T07:05:36-08:00</ImporterTime>
+  <ImporterTime>2018-02-28T18:47:51-08:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
-  <ProcessorTime>2017-03-01T07:05:36-08:00</ProcessorTime>
+  <ProcessorTime>2018-02-28T18:47:51-08:00</ProcessorTime>
   <Parameters>
     <Key>ColorKeyColor</Key>
     <Value>255,0,255,255</Value>

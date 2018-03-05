@@ -22,3 +22,9 @@
 /home/taco/Projects/mgt/mgt/bin/DesktopGL/Any CPU/Debug/Content/font.xnb
 /home/taco/Projects/mgt/mgt/bin/DesktopGL/Any CPU/Debug/Content/download.xnb
 /home/taco/Projects/mgt/mgt/bin/DesktopGL/Any CPU/Debug/Content/laser.xnb
+/home/taco/Projects/mgt/mgt/bin/DesktopGL/Any CPU/Debug/Content/font2.xnb
+/home/taco/Projects/mgt/mgt/bin/DesktopGL/Any CPU/Debug/Content/greyscale.xnb
+/home/taco/Projects/mgt/mgt/bin/DesktopGL/Any CPU/Debug/Content/negative.xnb
+/home/taco/Projects/mgt/mgt/bin/DesktopGL/Any CPU/Debug/Content/rainbow.xnb
+/home/taco/Projects/mgt/mgt/bin/DesktopGL/Any CPU/Debug/Content/shader.xnb
+/home/taco/Projects/mgt/mgt/bin/DesktopGL/Any CPU/Debug/mgt.Desktop.exe.manifest

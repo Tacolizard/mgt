@@ -15,6 +15,13 @@ namespace mgt.Desktop
         SpriteBatch spriteBatch;
         public Manager manager;
         World world;
+        public int baseWidth = 1280;
+        public int baseHeight = 720;
+        public int ScreenWidth;
+        public int ScreenHeight;
+
+        public int gameWidth;
+        public int gameHeight;
 
         //shaders
         Effect effect;
@@ -37,17 +44,24 @@ namespace mgt.Desktop
         /// </summary>
         protected override void Initialize()
         {
-            // TODO: Add your initialization logic here
+            
 
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
             manager = new Manager(spriteBatch);
             world = manager.newWorld();
 
+            ScreenWidth = GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Width;
+            ScreenHeight = GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Height;
+            int scaleX = ScreenWidth / baseWidth;
+            int scaleY = ScreenWidth / baseHeight;
+
+            gameWidth = baseWidth * scaleX;
+            gameHeight = baseHeight * scaleY;
 
             //resize window
-            graphics.PreferredBackBufferWidth = 1280;
-            graphics.PreferredBackBufferHeight = 720;
+            graphics.PreferredBackBufferWidth = gameWidth;
+            graphics.PreferredBackBufferHeight = gameHeight;
             graphics.ApplyChanges();
 
             //IsFixedTimeStep = true;
@@ -75,7 +89,7 @@ namespace mgt.Desktop
 
             font = Content.Load<SpriteFont>("font2");
 
-            // TODO: use this.Content to load your game content here
+
         }
 
         /// <summary>
@@ -133,7 +147,7 @@ namespace mgt.Desktop
             //effect.Parameters["texMask"].SetValue(Content.Load<Texture2D>("rainbow"));
             //effect.CurrentTechnique.Passes[0].Apply(); //apply shader
 
-            spriteBatch.Draw(test, new Rectangle(0, 0, 1920, 1200), Color.White);
+            spriteBatch.Draw(test, new Rectangle(0, 0, gameWidth, gameHeight), Color.White);
             manager.draw(); //draw objects tracked by the manager
             spriteBatch.DrawString(font, "FPS: "+smoothFPS.framerate.ToString("0000"), new Vector2(0, 0), Color.White);
 

@@ -10,6 +10,7 @@
 
 #-------------------------------- References --------------------------------#
 
+/reference:../../packages/InfinitespaceStudios.Pipeline.1.0.9/tools/InfinitespaceStudios.Pipeline.dll
 
 #---------------------------------- Content ---------------------------------#
 
@@ -70,19 +71,28 @@
 
 #begin shader.fx
 /importer:EffectImporter
-/processor:EffectProcessor
+/processor:RemoteEffectProcessor
+/processorParam:RemoteAddress=pipeline.infinitespace-studios.co.uk
+/processorParam:RemotePort=443
+/processorParam:Protocol=https
 /processorParam:DebugMode=Auto
 /build:shader.fx
 
 #begin greyscale.fx
 /importer:EffectImporter
-/processor:EffectProcessor
+/processor:RemoteEffectProcessor
+/processorParam:RemoteAddress=pipeline.infinitespace-studios.co.uk
+/processorParam:RemotePort=443
+/processorParam:Protocol=https
 /processorParam:DebugMode=Auto
 /build:greyscale.fx
 
 #begin negative.fx
 /importer:EffectImporter
-/processor:EffectProcessor
+/processor:RemoteEffectProcessor
+/processorParam:RemoteAddress=pipeline.infinitespace-studios.co.uk
+/processorParam:RemotePort=443
+/processorParam:Protocol=https
 /processorParam:DebugMode=Auto
 /build:negative.fx
 

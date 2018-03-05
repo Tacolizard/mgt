@@ -1,0 +1,16 @@
+﻿<Properties StartupConfiguration="{905B6B3B-33B1-49FB-B691-AE30F88CB4F5}|Default">
+  <MonoDevelop.Ide.Workbench>
+    <Files>
+      <File FileName="Laser.cs" Line="14" Column="20" />
+      <File FileName="Shuttle.cs" Line="65" Column="48" />
+      <File FileName="Game1.cs" Line="18" Column="16" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.mgt.Desktop PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>
