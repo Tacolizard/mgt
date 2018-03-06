@@ -23,12 +23,16 @@ namespace mgt.Desktop
         public int gameWidth;
         public int gameHeight;
 
+        public int frame = 0;
+
         //shaders
         Effect effect;
         Effect greyscale;
 
         private Texture2D test;
         private SpriteFont font;
+
+        public Shuttle player;
 
         public Game1()
         {
@@ -87,8 +91,7 @@ namespace mgt.Desktop
             effect = Content.Load<Effect>("shader");
             greyscale = Content.Load<Effect>("greyscale");
 
-            manager.newObj(new Shuttle());
-            manager.newObj(new Invader());
+            player = (Shuttle) manager.newObj(new Shuttle());
 
 
 
@@ -114,12 +117,18 @@ namespace mgt.Desktop
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Update(GameTime gameTime)
         {
+            frame++;
             KeyboardState state = Keyboard.GetState();
 
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || state.IsKeyDown(Keys.Escape))
                 Exit();
 
             manager.update(); //update manager-tracked objects
+
+            if (frame%120==0)
+            {
+                manager.newObj(new Invader());
+            }
 
             //create a texture2d from an Obj's path variable. highly useful because 
             //it means i don't need to write lines of code to load every sprite
@@ -130,7 +139,7 @@ namespace mgt.Desktop
                     if (manager.world.contents[i].sprite == null) //ez performance optimization
                     {
                         manager.world.contents[i].sprite = Content.Load<Texture2D>(manager.world.contents[i].path);
-                        Console.WriteLine("resolved sprite from path '"+manager.world.contents[i].path+"'");
+                        //Console.WriteLine("resolved sprite from path '"+manager.world.contents[i].path+"'");
                     }
                 }
             }
@@ -156,6 +165,7 @@ namespace mgt.Desktop
             spriteBatch.Draw(test, new Rectangle(0, 0, gameWidth, gameHeight), Color.White);
             manager.draw(); //draw objects tracked by the manager
             spriteBatch.DrawString(font, "FPS: "+smoothFPS.framerate.ToString("0000"), new Vector2(0, 0), Color.White);
+            spriteBatch.DrawString(font, "Score: "+player.score, new Vector2(0, 30), Color.White);
 
             spriteBatch.End();
 

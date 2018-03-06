@@ -46,7 +46,7 @@ namespace mgt.Desktop
             }
         }
 
-        public int newObj(Obj obj)
+        public Obj newObj(Obj obj)
         {
             for (int i = 0; i < this.world.contents.Length; i++)
             {
@@ -55,15 +55,16 @@ namespace mgt.Desktop
                     this.world.contents[i] = obj;
                     this.world.contents[i].manager = this;
                     this.world.contents[i].worldIndex = i;
-                    return i;
+                    return this.world.contents[i];
                 }
             }
             Console.WriteLine("Out of space for Objs.");
-            return 0;
+            return new Obj();
         }
 
         public void delObj(Obj obj)
         {
+            obj.Del();
             this.world.contents[obj.worldIndex] = null;
             obj = null;
         }

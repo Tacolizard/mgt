@@ -18,7 +18,7 @@ namespace mgt.Desktop
             this.hasPhysics = true;
             this.x = 200f;
             this.y = 200f;
-            this.mass = 0.01f;
+            this.mass = 0.05f;
         }
 
         public override void update()
@@ -52,10 +52,8 @@ namespace mgt.Desktop
                 this.cycles++;
                 if (this.cycles % laser.fireRate == 0)
                 {
-                    float angle = rnd.Next(-5, 5);
-                    Laser laser = (Laser) this.manager.world.contents[this.manager.newObj(new Laser(this.x + 60, this.y-50))];
-                    laser.angle = angle;
-                    laser.applyForce(new Vector2(angle, -30));
+                    laser = (Laser) this.manager.newObj(new Laser(this.x + 70, this.y));
+                    laser.fire(this, new Vector2(0, -30));
                 }
             }
         }
